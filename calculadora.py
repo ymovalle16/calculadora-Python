@@ -8,12 +8,11 @@ def multiplicar(num1, num2):
     return num1 * num2
 
 def dividir(num1, num2):
-    if num2 == 0:
-         print("La operación es inválida")
+    if num2 != 0:
+        return num1/num2
     else:
-        resultado = num1/num2
-    return resultado
-
+        print("La operación es inválida")
+        
 operacion = int(input("""Selecciones la operación que desea realizar:
                       1) Suma
                       2) Resta
